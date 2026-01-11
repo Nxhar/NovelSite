@@ -509,22 +509,22 @@ const Ch2_ThingsNotLiningUp = () => {
         {/* --- THE ULTRA-GLITCHY ENDING --- */}
         <motion.div 
           animate={{ 
-            x: [-2, 2, -1, 1, 0],
-            y: [1, -1, 2, -2, 0],
+            x: [-1, 1, -0.5, 0.5, 0],
+            y: [0.5, -0.5, 1, -1, 0],
           }}
           transition={{ 
             repeat: Infinity, 
-            duration: 0.1, 
+            duration: 0.2, 
             repeatType: "mirror" 
           }}
-          className="not-prose mt-20 mb-32 p-10 border-2 border-red-600/50 dark:border-red-400/50 bg-stone-50 dark:bg-zinc-950 rounded-sm shadow-[0_0_20px_rgba(255,0,0,0.1)] relative overflow-hidden"
+          className="not-prose mt-20 mb-32 p-10 border-2 border-red-600/50 dark:border-red-400/50 bg-stone-50 dark:bg-zinc-950 rounded-sm shadow-[0_0_20px_rgba(255,0,0,0.05)] relative overflow-hidden"
         >
           {/* Scanning Line Effect */}
           <div className="absolute top-0 left-0 w-full h-full pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[length:100%_2px,3px_100%] z-10"></div>
           
           <motion.div
-            animate={{ opacity: [1, 0.8, 1, 0.9, 1] }}
-            transition={{ repeat: Infinity, duration: 0.05 }}
+            animate={{ opacity: [1, 0.92, 1, 0.96, 1] }}
+            transition={{ repeat: Infinity, duration: 0.2 }}
           >
             <p className="text-center font-serif text-xl md:text-2xl text-stone-900 dark:text-white leading-relaxed relative z-20">
               “You can,” Will said in a calm, almost mechanical tone, looking past them, looking right at the reader.
@@ -537,7 +537,7 @@ const Ch2_ThingsNotLiningUp = () => {
           </motion.div>
 
           {/* Glitch Overlay - A "ghost" of the text that flickers */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none italic font-bold text-4xl text-red-600 select-none">
+           <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none italic font-bold text-4xl text-red-600 select-none">
              ERROR_NOT_FINAL_VERSION
           </div>
         </motion.div>
